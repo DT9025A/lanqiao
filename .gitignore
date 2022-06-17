@@ -5,3 +5,8 @@
 *.zip
 */*/Listing/*
 */*/Objects/*
+*.LST
+*.OBJ
+*.__i
+*.M51
+*.lnp
