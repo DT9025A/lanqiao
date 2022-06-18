@@ -31,7 +31,7 @@ void Timer2Init (void) {	//2ms@12.000MHz
 
 void T2INT() interrupt 12 {
     static u8 i = 0;
-                             
+
     Select_Out (6, 1 << i);
     Select_Out (7, Seg_Table[DispBuf[i]]);
 
@@ -45,7 +45,7 @@ void Display_Clear() {
 
 void Display_Init() {
     u8 i;
-                          
+
     Seg_Table[0x1a] = 0xfe;
     Seg_Table[0x1b] = 0xbf;
     Seg_Table[0x1c] = 0xf7;
